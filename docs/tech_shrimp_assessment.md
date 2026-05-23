@@ -5,8 +5,11 @@
 - GitHub 公开页面显示 `tech-shrimp` 有 `Repositories 22`。
 - GitHub REST API 首次请求返回 `public_repos=25`，后续匿名 API 请求触发 rate limit。
 - 因为公开页面和 API 结果存在数量差异，本文件暂按“公开页面可见仓库 + API 首次返回的补充仓库”合并盘点，不视为最终导入清单。
-- GitHub 插件本轮初始化失败，尚未能用用户登录态核验目标仓库权限、README、许可证和最新 commit。
-- 当前项目目录不是 git 仓库，且用户尚未提供目标仓库 `owner/name`，因此没有执行远程导入、push、fork 或 vendor 化。
+- GitHub 插件本轮初始化失败，后续改用本机已登录的 `gh` CLI 和活动账号 `cocyuhao` 操作。
+- 已使用 GitHub 原生 fork 将 24 个 `tech-shrimp` 公开仓库归档到 `cocyuhao` 账号。
+- `tech-shrimp/WechatMoments` fork 失败，GitHub 返回 `HTTP 451: Repository access blocked`，不应绕过。
+- 已创建索引仓库 [cocyuhao/tech-shrimp-open-source-archive](https://github.com/cocyuhao/tech-shrimp-open-source-archive)，保存清单、fork 结果和评估。
+- 当前项目目录不是 git 仓库；没有把外部源码混入本项目主线。
 
 ## 与本项目相关性
 
